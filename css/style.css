@@ -23,6 +23,8 @@ h2 {
     font-weight: 400;
     font-style: normal;
     font-family: cooper-black-std, serif;
+    text-align: center;
+    margin: 0 0 2rem 0;
 }
 
     /* font til nav-links */
@@ -33,6 +35,7 @@ h3 {
     font-weight: 400;
     font-style: normal;
     font-family: cooper-black-std, serif;
+    text-align: center;
 }
 
 p {
@@ -96,10 +99,10 @@ p {
     pointer-events: none;
   }
 
-
+/* grid til forsiden */
   .grid_1 {
       display: grid;
-      gap: 20px;
+      gap: 50px;
       margin: 50px;
   }
 
@@ -114,12 +117,12 @@ p {
 }
 .grid_1_3 {
     display: grid;
-    grid-row: auto auto;
+    grid-row: 1fr 1fr;
     grid-column: 1fr 1fr 1fr;
     gap:30px;
 }
 
-.felt_1 {
+.felt_1_1 {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -127,25 +130,74 @@ p {
 
 }
 
-.felt_2 {
+.felt_1_2 {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 3;
     grid-column-end: 4;
 }
 
-.felt_3 {
+.felt_1_3 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 3;
 }
-.felt_4 {
+.felt_1_4 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 4;
-    background-color: #F5CB15;
+}
+
+/* Grid til "om mig" siden */
+.grid_2{
+    display: grid;
+    gap: 30px;
+}
+
+.grid_2_2{
+    display: grid;
+    grid-row: 1fr 1fr;
+    grid-column: 1fr 1fr;
+    gap:50px;
+}
+
+.grid_2_3{
+    display: grid;
+}
+
+.grid_2_3{
+    display: grid;
+}
+
+
+.felt_2_1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+.felt_2_2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.felt_2_3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.felt_2_4 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 
@@ -153,6 +205,30 @@ img {
     height: 100%;
     width: 100%;
 }
+
+/* Knap til CV */
+
+.button {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    border: none;
+    color: black;
+    background-color: #F5C716;
+    padding: 15px 32px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 1rem;
+  }
+  
+  button:hover {
+    color: black;
+    background-color: #f5c8166b;
+    transform: scale(1.05);
+  }
 
 
 
