@@ -4,7 +4,6 @@ main {
     max-width: 1200px;
   }
 
-
-.splash {
-    background-image: url(Billeder/test.slet.jpg);
+body {
+    background-image: url("Billeder/test.jpg");
 }
