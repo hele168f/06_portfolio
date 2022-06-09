@@ -211,88 +211,131 @@ p {
 
 .grid_3_1 {
     display: grid;
-    gap: 50px;
-    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 100px;
+    column-gap: 20px;
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column: 1fr 1fr;
 }
-
-.felt_3_1_1 {
+.tema_2 {
     grid-row-start: 1;
     grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.felt_3_1_1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
     background-color: #F58FA5;
 }
 .felt_3_1_2 {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
 }
+.tema_3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
 .felt_3_1_3 {
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end: 2;
 }
 .felt_3_1_4 {
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 3;
     background-color: #F58FA5;
 }
 .felt_3_1_5 {
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
     grid-column-start: 1;
     grid-column-end: 2;
     background-color: #F58FA5;
 }
 .felt_3_1_6 {
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
     grid-column-start: 2;
     grid-column-end: 3;
 }
+.tema_4 {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 .felt_3_1_7 {
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 8;
     grid-column-start: 1;
     grid-column-end: 2;
 }
 .felt_3_1_8 {
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 8;
     grid-column-start: 2;
     grid-column-end: 3;
     background-color: #F58FA5;
 }
+.tema_5 {
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 .felt_3_1_9 {
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 10;
     grid-column-start: 1;
     grid-column-end: 2;
     background-color: #F58FA5;
 }
 .felt_3_1_10 {
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 10;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 .felt_3_1_11 {
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 10;
+    grid-row-end: 11;
     grid-column-start: 1;
     grid-column-end: 2;
 }
 .felt_3_1_12 {
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 10;
+    grid-row-end: 11;
     grid-column-start: 2;
     grid-column-end: 3;
     background-color: #F58FA5;
+}
+.tema_6 {
+    grid-row-start: 11;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.felt_3_1_13 {
+    grid-row-start: 12;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #F58FA5;
+}
+.felt_3_1_14 {
+    grid-row-start: 12;
+    grid-row-end: 13;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 
@@ -323,6 +366,24 @@ img {
     color: black;
     background-color: #f5c8166b;
     transform: scale(1.05);
+  }
+
+
+
+
+
+
+  /* figur der flyver rundt */
+
+  ._3s-element-left {
+    position: absolute;
+    left: 8%;
+    top: 160%;
+    right: auto;
+    bottom: 0;
+    z-index: 10;
+    max-width: 250px;
+    max-height: 250px;
   }
 
 
