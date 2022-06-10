@@ -38,6 +38,15 @@ h3 {
     text-align: center;
 }
 
+/* Font til under nav-links */
+h4 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    font-family:"nimbus-sans"; 
+}
 p {
     font-size: 15px;
     letter-spacing: 0.1rem;
@@ -71,6 +80,29 @@ p {
     text-decoration-thickness: 1px;
   }
   .nav-links a.active {
+    text-decoration: underline 1px black;
+  }
+
+  .under-nav-links {
+    cursor: pointer;
+    text-align: center;
+    min-height: 30px;
+    width: 100%;
+  }
+
+  .under-nav-links a {
+    display: inline-block;
+    padding: 20px 100px 0px 100px;
+  }
+
+  .under-nav-links a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 1px;
+
+
+  }
+  .under-nav-links a.active2 {
     text-decoration: underline 1px black;
   }
 
@@ -422,4 +454,366 @@ img {
  
  }
 
+
+ /* styling af tema 2 */
+
+
+
+ .grid_t2_1 {
+     display: grid;
+     gap: 20px;
+     margin: 7rem 0;
+ }
+
+ .grid_t2_1_1 {
+     display: grid;
+     grid-row: 1fr;
+     grid-column: 1fr 1fr;
+ }
+
+ .felt_t2_1 {
+     grid-row-start: 1;
+     grid-row-end: 2;
+     grid-column-start: 1;
+     grid-column-end: 2;
+ }
+
+.felt_t2_2 {
+    grid-row-start: 1;
+     grid-row-end: 2;
+     grid-column-start: 2;
+     grid-column-end: 3;
+     background-color: #F58FA5;
+}
+
+.grid_t2_1_2 {
+    display: grid;
+    grid-row: 1fr;
+    grid-column: 1fr 1fr;
+    gap: 3rem;
+}
+
+.felt_t2_3 {
+    grid-row-start: 1;
+     grid-row-end: 2;
+     grid-column-start: 1;
+     grid-column-end: 2;
+    margin: 0 3rem 0 0
+}
+
+.felt_t2_4 {
+    grid-row-start: 1;
+     grid-row-end: 2;
+     grid-column-start: 2;
+     grid-column-end: 3;
+}
+
+
+/* Styling af tema 3 */
+.grid_t3_1 {
+    display: grid;
+    gap: 5px;
+    margin: 7rem 0;
+}
+
+.grid_t3_1_1 {
+    display: grid;
+    grid-row: 1fr;
+    grid-column: 1fr 1fr;
+}
+
+.felt_t3_1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.felt_t3_2 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #F58FA5;
+}
+
+.grid_t3_1_2 {
+   display: grid;
+   grid-row: 1fr;
+   grid-column: 1fr 1fr;
+   gap: 3rem;
+}
+
+.felt_t3_3 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   margin: 0 3rem 0 0
+}
+
+.felt_t3_4 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* UX pitch deck */
+
+.grid_t3_2 {
+    display: grid;
+    gap: 20px;
+    margin: 7rem 0;
+}
+
+.grid_t3_2_1 {
+    display: grid;
+    grid-row: 1fr;
+    grid-column: 1fr 1fr;
+}
+
+.felt_t3_1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.felt_t3_2 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #F58FA5;
+}
+
+.grid_t3_2_2 {
+   display: grid;
+   grid-row: 1fr;
+   grid-column: 1fr 1fr;
+   gap: 3rem;
+}
+
+.felt_t3_3 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   margin: 0 3rem 0 0
+}
+
+.felt_t3_4 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+/* styling af tema 4 */
+
+.grid_t4_1 {
+    display: grid;
+    gap: 20px;
+    margin: 7rem 0;
+}
+
+.grid_t4_1_1 {
+    display: grid;
+    grid-row: 1fr;
+    grid-column: 1fr 1fr;
+}
+
+.felt_t4_1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.felt_t4_2 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #F58FA5;
+}
+
+.grid_t4_1_2 {
+   display: grid;
+   grid-row: 1fr;
+   grid-column: 1fr 1fr;
+   gap: 3rem;
+}
+
+.felt_t4_3 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   margin: 0 3rem 0 0
+}
+
+.felt_t4_4 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+/* Styling af tema 5 */
+.grid_t5_1 {
+    display: grid;
+    gap: 5px;
+    margin: 7rem 0;
+}
+
+.grid_t5_1_1 {
+    display: grid;
+    grid-row: 1fr;
+    grid-column: 1fr 1fr;
+}
+
+.felt_t5_1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.felt_t5_2 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #F58FA5;
+}
+
+.grid_t5_1_2 {
+   display: grid;
+   grid-row: 1fr;
+   grid-column: 1fr 1fr;
+   gap: 3rem;
+}
+
+.felt_t5_3 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   margin: 0 3rem 0 0
+}
+
+.felt_t5_4 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* UX pitch deck */
+
+.grid_t5_2 {
+    display: grid;
+    gap: 20px;
+    margin: 7rem 0;
+}
+
+.grid_t5_2_1 {
+    display: grid;
+    grid-row: 1fr;
+    grid-column: 1fr 1fr;
+}
+
+.felt_t5_1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.felt_t5_2 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #F58FA5;
+}
+
+.grid_t5_2_2 {
+   display: grid;
+   grid-row: 1fr;
+   grid-column: 1fr 1fr;
+   gap: 3rem;
+}
+
+.felt_t5_3 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   margin: 0 3rem 0 0
+}
+
+.felt_t5_4 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+
+/* styling af tema 6 */
+
+.grid_t6_1 {
+    display: grid;
+    gap: 20px;
+    margin: 7rem 0;
+}
+
+.grid_t6_1_1 {
+    display: grid;
+    grid-row: 1fr;
+    grid-column: 1fr 1fr;
+}
+
+.felt_t6_1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.felt_t6_2 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #F58FA5;
+}
+
+.grid_t6_1_2 {
+   display: grid;
+   grid-row: 1fr;
+   grid-column: 1fr 1fr;
+   gap: 3rem;
+}
+
+.felt_t6_3 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   margin: 0 3rem 0 0
+}
+
+.felt_t6_4 {
+   grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
 
