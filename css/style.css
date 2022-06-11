@@ -5,11 +5,16 @@
     box-sizing: border-box;
   }
 
+  main {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
 /* font styling */
 
 h1 {
     font-size: 80px;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.5rem;
     color: black;
     font-weight: 400;
     font-style: normal;
@@ -47,6 +52,14 @@ h4 {
     font-style: normal;
     font-family:"nimbus-sans"; 
 }
+h5 {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    font-family:"nimbus-sans"; 
+}
 p {
     font-size: 15px;
     letter-spacing: 0.1rem;
@@ -69,17 +82,17 @@ p {
     width: 100%;
   }
 
-  .nav-links a {
+  .nav-links li {
     display: inline-block;
     padding: 20px 60px 0px 60px;
   }
 
-  .nav-links a:hover {
+  .nav-links li:hover {
     text-decoration: underline;
     text-decoration-color: black;
     text-decoration-thickness: 1px;
   }
-  .nav-links a.active {
+  .nav-links li.active {
     text-decoration: underline 1px black;
   }
 
@@ -90,23 +103,67 @@ p {
     width: 100%;
   }
 
-  .under-nav-links a {
+  .under-nav-links li {
     display: inline-block;
     padding: 20px 100px 0px 100px;
   }
 
-  .under-nav-links a:hover {
+  .under-nav-links li:hover {
     text-decoration: underline;
     text-decoration-color: black;
     text-decoration-thickness: 1px;
 
 
   }
-  .under-nav-links a.active2 {
+  .under-nav-links li.active2 {
     text-decoration: underline 1px black;
   }
 
+  
 
+  /* styling af forsiden */
+.splash {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Billeder/splash2.webp);
+    background-size: cover;
+    background-position: 70% 100%;
+    max-width: none;
+    background-repeat: no-repeat;
+  }
+  
+  .forside {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .forside_txt {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+    padding-block-start: 13rem;
+  }
+  .forside_txt img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .forside_txt h5 {
+    display: flex;
+    align-self: center;
+  }
+  .forside_txt h1 {
+    display: flex;
+    place-content: center;
+    padding-inline-start: 0;
+  }
+  
+  .forside_txt h4 {
+    display: flex;
+    place-content: center;
+  }
 
 
 
@@ -119,69 +176,12 @@ p {
     width: 100%;
     /* Height of the footer*/ 
     height: 40px;
-    background: #F58FA5;
+
+    position: sticky;
+    top: 100vh;
   }
 
 
-  .baggrund_forside {
-    width: 100%;
-    height: 100%;
-    top: 0%;
-    left: 0%;
-    background-size: cover;
-    pointer-events: none;
-  }
-
-/* grid til forsiden */
-  .grid_1 {
-      display: grid;
-      gap: 50px;
-      margin: 50px;
-  }
-
-  .grid_1_1 {
-      display: grid;
-
-  }
-
-  .grid_1_2 {
-    display: grid;
-    gap: 30px;
-}
-.grid_1_3 {
-    display: grid;
-    grid-row: 1fr 1fr;
-    grid-column: 1fr 1fr 1fr;
-    gap:30px;
-}
-
-.felt_1_1 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
-}
-
-.felt_1_2 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
-
-.felt_1_3 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-.felt_1_4 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
-}
 
 /* Grid til "om mig" siden */
 .grid_2{
@@ -260,7 +260,6 @@ p {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
-    background-color: #F58FA5;
 }
 .felt_3_1_2 {
     grid-row-start: 2;
@@ -422,37 +421,7 @@ img {
 
 
 
-  @media (max-width: 500px) {
-    .grid_2_2 { 
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-     }
-    .felt_2_1 {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .felt_2_2 {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .felt_2_3 {
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .felt_2_4 {
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
- 
- }
+
 
 
  /* styling af tema 2 */
@@ -816,4 +785,41 @@ img {
     grid-column-start: 2;
     grid-column-end: 3;
 }
+
+/* Media */
+
+@media (max-width: 500px) {
+    .grid_2_2 { 
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+     }
+    .felt_2_1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .felt_2_2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .felt_2_3 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .felt_2_4 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+ 
+ }
+
+
+
 
