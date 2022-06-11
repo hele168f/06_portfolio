@@ -92,7 +92,7 @@ p {
     text-decoration-color: black;
     text-decoration-thickness: 1px;
   }
-  .nav-links li.active {
+  .nav-links a.active {
     text-decoration: underline 1px black;
   }
 
@@ -115,7 +115,7 @@ p {
 
 
   }
-  .under-nav-links li.active2 {
+  .under-nav-links a.active2 {
     text-decoration: underline 1px black;
   }
 
