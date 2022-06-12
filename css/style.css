@@ -35,21 +35,24 @@ h2 {
 h3 {
     font-size: 15px;
     letter-spacing: 1.5px;
-    color: black;
+    color: #146AF1;
     font-weight: 400;
     font-style: normal;
     font-family: cooper-black-std, serif;
     text-align: center;
+    margin: 35px 0;
 }
 
 /* Font til under nav-links */
 h4 {
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 1.5px;
-    color: black;
+    color: rgb(250, 249, 249);
     font-weight: 400;
     font-style: normal;
-    font-family:"nimbus-sans"; 
+    font-family: cooper-black-std, serif;
+    text-align: center;
+    margin: 35px 0; 
 }
 h5 {
     font-size: 25px;
@@ -58,6 +61,17 @@ h5 {
     font-weight: 400;
     font-style: normal;
     font-family:"nimbus-sans"; 
+}
+
+h6 {
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    line-height: 1.6rem;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
+    font-family:"nimbus-sans";
+    text-align: center;
 }
 p {
     font-size: 15px;
@@ -110,9 +124,12 @@ a{
 .nav-link{
     transition: 0.7s ease;
 }
+.nav-link.active{
+    text-decoration: solid underline 1.5px black ;
+}
 
 .nav-link:hover{
-    color: blue;
+    text-decoration: solid underline 1.5px black ;
 }
 
 .hamburger{
@@ -242,6 +259,7 @@ a{
     text-align: center;
     bottom: 0;
     width: 100%;
+    
     /* Height of the footer*/ 
     height: 40px;
 
@@ -251,7 +269,7 @@ a{
 
 
 
-/* Grid til "om mig" siden */
+/* "om mig" siden */
 
 .parent_2 {
     max-width: 1200px;
@@ -266,56 +284,15 @@ a{
     .parent_2 { grid-template-columns: 1fr 1fr; }
   }
 
-/* .grid_2{
-    display: grid;
-    gap: 30px;
-    margin: 3rem;
-}
+  .full-width {
+      background-color: #146AF1;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: minmax(auto, 900px);
+      justify-content: center;
+      
+  }
 
-.grid_2_2{
-    display: grid;
-    grid-row: 1fr 1fr;
-    grid-column: 1fr 1fr;
-    gap:50px;
-}
-
-.grid_2_3{
-    display: grid;
-}
-
-.grid_2_3{
-    display: grid;
-}
-
-
-.felt_2_1 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
-
-}
-
-.felt_2_2 {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.felt_2_3 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-.felt_2_4 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
- */
 
 /* Grid til portfolio */
 
@@ -469,7 +446,7 @@ img {
   button {
     border: none;
     color: black;
-    background-color: #146AF1;
+    background-color: #F87900;
     padding: 15px 32px;
     display: inline-block;
     cursor: pointer;
@@ -479,7 +456,7 @@ img {
   
   button:hover {
     color: black;
-    background-color: #1469f14b;
+    background-color: #f98e29;
     transform: scale(1.05);
   }
 
