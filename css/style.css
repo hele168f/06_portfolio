@@ -28,7 +28,6 @@ h2 {
     font-weight: 400;
     font-style: normal;
     font-family: cooper-black-std, serif;
-    text-align: center;
     margin: 0 0 2rem 0;
 }
 
@@ -68,7 +67,7 @@ p {
     font-weight: 400;
     font-style: normal;
     font-family:"nimbus-sans";
-    max-width: 60ch;
+    max-width: 66ch;
     
 }
 
@@ -129,7 +128,7 @@ a{
     transition: all 0.3s ease-in-out;
     background-color: black;
 }
-
+/* Media til hamburgermenu */
 @media(max-width: 768px){
     .hamburger{
         display: block;
@@ -165,31 +164,6 @@ a{
     }
 }
 
-/* Styling af nav baren og under nav bar */
-/* .nav-links {
-    display: flex;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-    background-color: transparent;
-    min-height: 55px;
-    width: 100%;
-  }
-
-  .nav-links li {
-    display: inline-block;
-    padding: 20px 60px 0px 60px;
-  }
-
-  .nav-links li:hover {
-    text-decoration: underline;
-    text-decoration-color: black;
-    text-decoration-thickness: 1px;
-    
-  }
-  .nav-links a.active {
-    text-decoration: underline 1px black;
-  } */
 
   .under-nav-links {
     cursor: pointer;
@@ -278,7 +252,21 @@ a{
 
 
 /* Grid til "om mig" siden */
-.grid_2{
+
+.parent_2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  @media (min-width: 600px) {
+    .parent_2 { grid-template-columns: 1fr 1fr; }
+  }
+
+/* .grid_2{
     display: grid;
     gap: 30px;
     margin: 3rem;
@@ -327,7 +315,7 @@ a{
     grid-column-start: 2;
     grid-column-end: 3;
 }
-
+ */
 
 /* Grid til portfolio */
 
@@ -465,11 +453,11 @@ a{
     grid-column-end: 3;
 }
 
-/* blev udkommenteret, fordi jeg ikke kunne sætte height og width på mine billeder */
-/* img {
+
+img {
     height: 100%;
     width: 100%;
-} */
+} 
 
 /* Knap til CV */
 
@@ -867,39 +855,6 @@ a{
     grid-column-end: 3;
 }
 
-/* Media */
-
-@media (max-width: 500px) {
-    .grid_2_2 { 
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-     }
-    .felt_2_1 {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .felt_2_2 {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .felt_2_3 {
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .felt_2_4 {
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
- 
- }
 
 
 
