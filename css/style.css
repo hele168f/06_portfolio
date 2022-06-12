@@ -63,11 +63,13 @@ h5 {
 p {
     font-size: 15px;
     letter-spacing: 0.1rem;
-    line-height: 1.3rem;
+    line-height: 1.6rem;
     color: black;
     font-weight: 400;
     font-style: normal;
     font-family:"nimbus-sans";
+    max-width: 60ch;
+    
 }
 
 /* NAVIGATIONS BAR */
@@ -279,6 +281,7 @@ a{
 .grid_2{
     display: grid;
     gap: 30px;
+    margin: 3rem;
 }
 
 .grid_2_2{
@@ -462,7 +465,7 @@ a{
     grid-column-end: 3;
 }
 
-blev udkommenteret, fordi jeg ikke kunne sætte height og width på mine billeder
+/* blev udkommenteret, fordi jeg ikke kunne sætte height og width på mine billeder */
 /* img {
     height: 100%;
     width: 100%;
@@ -478,7 +481,7 @@ blev udkommenteret, fordi jeg ikke kunne sætte height og width på mine billede
   button {
     border: none;
     color: black;
-    background-color: #F5C716;
+    background-color: #146AF1;
     padding: 15px 32px;
     display: inline-block;
     cursor: pointer;
@@ -488,7 +491,7 @@ blev udkommenteret, fordi jeg ikke kunne sætte height og width på mine billede
   
   button:hover {
     color: black;
-    background-color: #f5c8166b;
+    background-color: #1469f14b;
     transform: scale(1.05);
   }
 
